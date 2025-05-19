@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { getMessages, sendMessageToChat } from "../services/api";
+import { useParams } from "react-router-dom";
 
-const ChatPage = ({ chatId }) => {
+const ChatPage = () => {
+  const { id } = useParams();  // Отримуємо id з URL
+  const chatId = id;
+
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [userId, setUserId] = useState(null);
