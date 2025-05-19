@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import AboutPage from "./pages/About";
-import AuthPage from "./pages/Auth";
-import ProfilePage from "./pages/Profile";
-import ChatPage from "./pages/Chat";
-import ChatListPage from "./pages/ChatList";
+import AboutPage from "./components/About";
+import AuthPage from "./components/Auth";
+import ProfilePage from "./components/Profile";
+import ChatPage from "./components/Chat";
+import ChatListPage from "./components/ChatList";
 import Navbar from "./components/Navbar";
 
 const isAuthenticated = () => !!localStorage.getItem("authToken");

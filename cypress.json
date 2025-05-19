@@ -1,0 +1,15 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "video": true,
+    "reporter": "spec",
+    "integrationFolder": "tests/e2e/integration",
+    "supportFile": "tests/e2e/support/index.js",
+    "fixturesFolder": "tests/e2e/fixtures",
+    "screenshotsFolder": "tests/e2e/screenshots",
+    "trashAssetsBeforeRuns": true,
+    "env": {
+        "TAGS": "@smoke"
+    }
+}
